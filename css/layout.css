@@ -1,0 +1,182 @@
+
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--white);
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-green);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-green);
+}
+
+.header-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+
+.hero-banner {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/hero/hero-bg.jpg') center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--white);
+  padding: 0 1rem;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+
+.catalog-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .catalog-container {
+    grid-template-columns: 250px 1fr;
+    padding: 2rem;
+  }
+}
+
+.sidebar-filters {
+  position: sticky;
+  top: 90px;
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+  height: fit-content;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+.main-footer {
+  background-color: var(--dark-text);
+  color: var(--white);
+  padding: 3rem 2rem 1rem;
+  margin-top: 3rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+.eco-carousel {
+  max-width: 68rem;
+  margin-inline: auto;
+}
+/* ==========================================================
+   CATÁLOGO: encabezado a ancho completo arriba del layout
+   ========================================================== */
+
+/* El contenedor pasa a ser una columna: hero arriba, layout debajo */
+main.catalog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+  box-sizing: border-box;
+}
+
+/* Si tu CSS anterior lo definía como grid, esto lo hace ocupar toda la fila */
+main.catalog-container > .catalog-hero {
+  grid-column: 1 / -1;
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 2rem;
+  padding: 3rem 1.5rem 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.catalog-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  line-height: 1.2;
+  margin: 0 0 .75rem;
+  color: #1b5e20;
+}
+
+.catalog-hero p {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+/* Layout: sidebar + productos, ahora debajo del hero */
+main.catalog-container > .catalog-layout {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  main.catalog-container > .catalog-layout {
+    grid-template-columns: 1fr;
+  }
+}

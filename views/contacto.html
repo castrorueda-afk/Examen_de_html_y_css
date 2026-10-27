@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacta a EcoMarket: escríbenos tus dudas, pedidos o sugerencias.">
+  <title>Contacto - EcoMarket</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+  <a class="eco-skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="main-header">
+    <a class="logo" href="../index.html">EcoMarket</a>
+    <nav class="nav-menu" aria-label="Principal">
+      <a class="nav-link" href="../index.html">Inicio</a>
+      <a class="nav-link" href="productos.html">Catálogo</a>
+      <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+      <a class="nav-link" href="contacto.html" aria-current="page">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="contenido" class="catalog-container">
+
+    <section class="catalog-hero">
+      <h1>Contáctanos</h1>
+      <p>¿Dudas, pedidos o sugerencias? Escríbenos y te respondemos pronto.</p>
+    </section>
+
+    <div class="contact-section-grid">
+
+      <section id="formulario" aria-labelledby="titulo-form">
+        <!-- REEMPLAZAR tucorreo@ejemplo.com por el correo real que recibirá los mensajes -->
+        <form class="contact-form" action="mailto:tucorreo@ejemplo.com" method="post" enctype="text/plain">
+          <h2 id="titulo-form">Envíanos un mensaje</h2>
+
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" autocomplete="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto" autocomplete="off" required>
+          </div>
+
+          <div class="form-group">
+            <label for="categoria">Categoría de la consulta</label>
+            <select id="categoria" name="categoria" required>
+              <option value="" selected disabled>Selecciona una opción</option>
+              <option value="producto">Consulta sobre un producto</option>
+              <option value="pedido">Pedido o compra</option>
+              <option value="envios">Envíos</option>
+              <option value="devoluciones">Cambios y devoluciones</option>
+              <option value="alianzas">Alianzas o ventas al por mayor</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+          </div>
+
+          <button class="eco-btn" type="submit">Enviar mensaje</button>
+        </form>
+      </section>
+
+      <aside class="contact-info-card" aria-labelledby="titulo-info">
+        <h2 id="titulo-info">Información de atención</h2>
+
+        <h3>Horario</h3>
+        <!-- REEMPLAZAR por el horario real -->
+        <p>Lunes a viernes: 8:00 a.m. – 6:00 p.m.<br>Sábados: 9:00 a.m. – 1:00 p.m.</p>
+
+        <h3>Ubicación</h3>
+        <!-- REEMPLAZAR por tu ciudad o dirección real -->
+        <p>Ciudad, Colombia</p>
+
+        <h3>Correo de soporte</h3>
+        <!-- REEMPLAZAR por el correo real -->
+        <p><a href="mailto:soporte@ecomarket.example">soporte@ecomarket.example</a></p>
+
+        <h3>Síguenos</h3>
+        <ul class="eco-social">
+          <!-- REEMPLAZAR cada href por el perfil real -->
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram<span class="eco-visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook<span class="eco-visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+          <li><a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok<span class="eco-visually-hidden"> (se abre en una pestaña nueva)</span></a></li>
+        </ul>
+
+        <p class="info-badge">Respondemos en un máximo de 24 horas hábiles.</p>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-bottom">
+      <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

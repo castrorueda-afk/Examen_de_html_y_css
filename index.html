@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EcoMarket: tienda de productos sustentables y amigables con el planeta.">
+  <title>EcoMarket - Productos Sustentables</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <a class="eco-skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="main-header">
+    <a class="logo" href="index.html">EcoMarket</a>
+    <nav class="nav-menu" aria-label="Principal">
+      <a class="nav-link" href="index.html" aria-current="page">Inicio</a>
+      <a class="nav-link" href="views/productos.html">Catálogo</a>
+      <a class="nav-link" href="views/sobre-nosotros.html">Sobre Nosotros</a>
+      <a class="nav-link" href="views/contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="contenido" class="main-home-container">
+
+    <section class="hero-section">
+      <h1>Bienvenidos a EcoMarket</h1>
+      <p>Tu tienda de productos sustentables y amigables con el planeta.</p>
+      <div class="hero-buttons">
+        <a class="btn-hero-primary" href="views/productos.html">Ver catálogo</a>
+        <a class="btn-hero-secondary" href="views/sobre-nosotros.html">Conócenos</a>
+      </div>
+    </section>
+
+    <section id="compra-responsable" class="compra-responsable-section" aria-labelledby="titulo-compra">
+      <h2 id="titulo-compra">Compra Responsable</h2>
+      <p>Descubre nuestros productos destacados comprometidos con el medio ambiente:</p>
+
+      <div class="eco-carousel" role="region" aria-label="Productos destacados de compra responsable">
+        <!-- Sin "checked": así el carrusel arranca en modo automático -->
+        <input class="eco-carousel__radio" type="radio" name="eco-slide" id="eco-s1">
+        <input class="eco-carousel__radio" type="radio" name="eco-slide" id="eco-s2">
+        <input class="eco-carousel__radio" type="radio" name="eco-slide" id="eco-s3">
+        <input class="eco-carousel__radio" type="radio" name="eco-slide" id="eco-s4">
+        <input class="eco-carousel__radio" type="radio" name="eco-slide" id="eco-s5">
+
+        <div class="eco-carousel__viewport">
+          <article class="eco-slide">
+            <img src="img/products/botella-termica-de-acero-inoxidable.webp" alt="Botella térmica de acero inoxidable reutilizable" width="800" height="600">
+            <div class="eco-slide__caption">
+              <h3 class="eco-slide__name">Botella Térmica de Acero Inoxidable</h3>
+              <p class="eco-slide__price">$59.900 COP</p>
+              <a class="eco-slide__link" href="views/detalle-producto.html#botella-termica" aria-label="Ver detalle de Botella Térmica de Acero Inoxidable">Ver detalle</a>
+            </div>
+          </article>
+
+          <article class="eco-slide">
+            <img src="img/products/cepillo-de-bambu.jpg" alt="Cepillo de dientes de bambú biodegradable" width="800" height="600">
+            <div class="eco-slide__caption">
+              <h3 class="eco-slide__name">Cepillo de Bambú</h3>
+              <p class="eco-slide__price">$9.900 COP</p>
+              <a class="eco-slide__link" href="views/detalle-producto.html#cepillo-de-bambu" aria-label="Ver detalle de Cepillo de Bambú">Ver detalle</a>
+            </div>
+          </article>
+
+          <article class="eco-slide">
+            <img src="img/products/cubiertos-de-bambu-con-estuche.jpg" alt="Set de cubiertos de bambú con estuche para llevar" width="800" height="600">
+            <div class="eco-slide__caption">
+              <h3 class="eco-slide__name">Cubiertos de Bambú con Estuche</h3>
+              <p class="eco-slide__price">$24.900 COP</p>
+              <a class="eco-slide__link" href="views/detalle-producto.html#cubiertos-de-bambu" aria-label="Ver detalle de Cubiertos de Bambú con Estuche">Ver detalle</a>
+            </div>
+          </article>
+
+          <article class="eco-slide">
+            <img src="img/products/shampoo-solido-natural.jpg" alt="Barra de shampoo sólido natural sin envase plástico" width="800" height="600">
+            <div class="eco-slide__caption">
+              <h3 class="eco-slide__name">Shampoo Sólido Natural</h3>
+              <p class="eco-slide__price">$22.900 COP</p>
+              <a class="eco-slide__link" href="views/detalle-producto.html#shampoo-solido" aria-label="Ver detalle de Shampoo Sólido Natural">Ver detalle</a>
+            </div>
+          </article>
+
+          <article class="eco-slide">
+            <img src="img/products/bolsa-de-tela-tote-bag-de-lienzo.webp" alt="Bolsa de tela tote bag de lienzo reutilizable" width="800" height="600">
+            <div class="eco-slide__caption">
+              <h3 class="eco-slide__name">Bolsa de Tela Tote Bag de Lienzo</h3>
+              <p class="eco-slide__price">$19.900 COP</p>
+              <a class="eco-slide__link" href="views/detalle-producto.html#tote-bag" aria-label="Ver detalle de Bolsa de Tela Tote Bag de Lienzo">Ver detalle</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="eco-carousel__dots">
+          <label class="eco-dot" for="eco-s1"><span class="eco-visually-hidden">Ver producto 1: Botella térmica</span></label>
+          <label class="eco-dot" for="eco-s2"><span class="eco-visually-hidden">Ver producto 2: Cepillo de bambú</span></label>
+          <label class="eco-dot" for="eco-s3"><span class="eco-visually-hidden">Ver producto 3: Cubiertos de bambú</span></label>
+          <label class="eco-dot" for="eco-s4"><span class="eco-visually-hidden">Ver producto 4: Shampoo sólido</span></label>
+          <label class="eco-dot" for="eco-s5"><span class="eco-visually-hidden">Ver producto 5: Tote bag</span></label>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-bottom">
+      <p>&copy; 2026 EcoMarket. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
