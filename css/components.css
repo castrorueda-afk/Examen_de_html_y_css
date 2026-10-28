@@ -763,3 +763,85 @@
     transform: none;
   }
 }
+/* Estilos para la sección de Oferta Relámpago */
+.ofert {
+  background-color: #f4f7f6;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 20px auto;
+  font-family: inherit;
+}
+
+.ofert .banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Información del texto */
+.promo-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.ofert .d-ofert {
+  color: #d9534f;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.ofert p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Contenedor del contador estático */
+.counter-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Círculos geométricos con gradiente y sombras suaves */
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  /* Gradiente coherente con EcoMarket */
+  background: linear-gradient(135deg, #a8ff78 0%, #78ffd6 100%);
+  /* Sombra suave requerida */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  
+  /* Centrado bidimensional exacto con Flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.label {
+  margin-top: 6px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #888;
+  letter-spacing: 0.5px;
+}
